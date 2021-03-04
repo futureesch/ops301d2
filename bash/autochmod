@@ -36,20 +36,27 @@
 
 # Prompts user for input directory path.
 echo "Please input directory path to autochmod:"
-read "answer"
+read "input_dir"
+
 
 # Prompts user for input permissions number (e.g. 777 to perform a 
 chmod 777)
 
 echo "Please select rwe permissions for the selected directory:"
-read "numbers"
+read "input_perm"
 
 # Navigates to the directory input by the user and changes all files 
 inside it to the input setting.
 
-chmod --recursive $numbers
+chmod --recursive $input_perm $input_dir
 
-# Prints to the screen the directory contents and the new permissions
+# Prints to the screen the directory contents and the new permissions 
 settings of everything in the directory.
 
-# Ran out of energy.
+ls -al $input_dir 
+
+# ls -al ../wherever to look at folder contents without going there 
+via cd
+
+# Fixed post review.
+
